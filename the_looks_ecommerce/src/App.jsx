@@ -9,10 +9,14 @@ import Collection from "./pages/Collection";
 import PlaceOrder from "./pages/PlaceOrder";
 import Orders from "./pages/Orders";
 import Cart from "./pages/Cart";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+      {/* Navbar component to show on all pages */}
+      <Navbar />
+
       <Routes>
         <Route index element={<Home />} />
         <Route path="/product/:productId" element={<Product />} />

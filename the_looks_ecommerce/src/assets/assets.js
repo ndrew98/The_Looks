@@ -1,5 +1,3 @@
-import crypto from "crypto";
-
 import p_img1 from "./p_img1.png";
 import p_img1_1 from "./p_img1_1.png";
 import p_img1_2 from "./p_img1_2.png";
