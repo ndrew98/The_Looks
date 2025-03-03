@@ -64,13 +64,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔄 Latest Updates
 
+- Enhanced navbar functionality and styling
 - Added responsive navigation
 - Implemented product filtering
 - Added shopping cart functionality
 - Integrated user authentication
 - Added order tracking
 
-_Last updated: March 2, 2025_
+_Last updated: March 3, 2025_
 
 ## 👨‍💻 Developer
 
