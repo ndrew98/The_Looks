@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { assets } from "../assets/assets";
 
 const Navbar = () => {
+  const [visible, setVisible] = useState(false);
   return (
     <div className="flex justify-between items-center py-5 font-medium ">
       <img src={assets.logo} alt="Logo" className="w-36" />
@@ -61,6 +62,60 @@ const Navbar = () => {
             15
           </p>
         </Link>
+        <img
+          onClick={() => setVisible(!visible)}
+          src={assets.menu_icon}
+          alt=""
+          className="w-5 cursor-pointer sm:hidden"
+        />
+      </div>
+      {/* {Sidebar componets for mobile/small screens} */}
+      <div
+        className={`absolute right-0 top-0 button-0 overflow-hidden bg-white transition-all ${
+          visible ? "w-full" : "w-0"
+        }`}
+      >
+        <div className="flex flex-col text-gray-600">
+          <div
+            onClick={() => setVisible(false)}
+            className="flex items-center gap-4 p-4 cursor-pointer "
+          >
+            <img
+              src={assets.dropdown_icon}
+              className="h-4 rotate-180"
+              alt="dropdown_icon"
+            />
+            <p>Back</p>
+          </div>
+          <NavLink
+            onClick={() => setVisible(false)}
+            className="py-2 pl-6  border "
+            to="/"
+          >
+            Home
+          </NavLink>
+          <NavLink
+            onClick={() => setVisible(false)}
+            className="py-2 pl-6 border"
+            to="/about"
+          >
+            About
+          </NavLink>
+          <NavLink
+            onClick={() => setVisible(false)}
+            className="py-2 pl-6 border"
+            to="/contact"
+          >
+            Contact
+          </NavLink>
+          <NavLink
+            onClick={() => setVisible(false)}
+            className="py-2 pl-6 border"
+            to="/collection"
+          >
+            Collection
+          </NavLink>
+        </div>
       </div>
     </div>
   );
