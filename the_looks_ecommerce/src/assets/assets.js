@@ -112,7 +112,7 @@ export const products = [
     subCategory: "Topwear",
     sizes: ["S", "M", "L"],
     date: "02-03-2025",
-    bestseller: true,
+    bestseller: false,
   },
   {
     _id: crypto.randomUUID(),
@@ -138,7 +138,7 @@ export const products = [
     subCategory: "Bottomwear",
     sizes: ["S", "L", "XL"],
     date: "02-03-2025",
-    bestseller: true,
+    bestseller: false,
   },
   {
     _id: crypto.randomUUID(),
@@ -151,7 +151,7 @@ export const products = [
     subCategory: "Topwear",
     sizes: ["S", "M", "XXL"],
     date: "02-03-2025",
-    bestseller: true,
+    bestseller: false,
   },
   {
     _id: crypto.randomUUID(),
@@ -164,7 +164,7 @@ export const products = [
     subCategory: "Topwear",
     sizes: ["M", "L", "XL"],
     date: "02-03-2025",
-    bestseller: true,
+    bestseller: false,
   },
   {
     _id: crypto.randomUUID(),
@@ -229,7 +229,7 @@ export const products = [
     subCategory: "Bottomwear",
     sizes: ["S", "L", "XL"],
     date: "02-03-2025",
-    bestseller: false,
+    bestseller: true,
   },
   {
     _id: crypto.randomUUID(),
@@ -255,7 +255,7 @@ export const products = [
     subCategory: "Topwear",
     sizes: ["S", "M", "L", "XL"],
     date: "02-03-2025",
-    bestseller: false,
+    bestseller: true,
   },
   {
     _id: crypto.randomUUID(),
@@ -281,7 +281,7 @@ export const products = [
     subCategory: "Topwear",
     sizes: ["S", "M", "L", "XL"],
     date: "02-03-2025",
-    bestseller: false,
+    bestseller: true,
   },
   {
     _id: crypto.randomUUID(),
@@ -307,7 +307,7 @@ export const products = [
     subCategory: "Topwear",
     sizes: ["S", "M", "L", "XL"],
     date: "02-03-2025",
-    bestseller: false,
+    bestseller: true,
   },
   {
     _id: crypto.randomUUID(),
