@@ -15,6 +15,8 @@ A modern, responsive e-commerce platform built with React and TailwindCSS. Shop 
 - 📦 Order tracking
 - 💳 Secure payment integration
 - 📱 Mobile-first design
+- ⭐ Wishlist functionality
+- 🎛️ Improved responsive filters for better usability
 
 ## 🚀 Quick Start
 
@@ -70,8 +72,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Added shopping cart functionality
 - Integrated user authentication
 - Added order tracking
+- Added wishlist functionality
+- Improved responsiveness for filter options
 
-_Last updated: March 3, 2025_
+_Last updated: March 30, 2025_
 
 ## 👨‍💻 Developer
 
