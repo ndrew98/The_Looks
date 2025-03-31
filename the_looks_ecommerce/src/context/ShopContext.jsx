@@ -10,6 +10,9 @@ const ShopContextProvider = ({ children }) => {
   // Standard delivery fee across the application
   const delivery_fee = 10;
 
+  const [search, setSearch] = useState("");
+  const [showSearch, setShowSearch] = useState(true);
+
   // Create a value object that contains all the data we want to share
   // This will be accessible by any component that uses the ShopContext
   const value = {
