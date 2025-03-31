@@ -24,6 +24,7 @@ const NewsLetterBox = () => {
           type="email"
           placeholder="Enter your email"
           required
+          name="email"
         />
         <button
           type="submit"

@@ -1,5 +1,6 @@
 import { products } from "../assets/assets";
 import { ShopContext } from "./ShopContextData";
+import { useState } from "react";
 
 // ShopContextProvider is a wrapper component that provides the context to its children
 // It contains all the shared state and functions that child components might need
@@ -11,7 +12,7 @@ const ShopContextProvider = ({ children }) => {
   const delivery_fee = 10;
 
   const [search, setSearch] = useState("");
-  const [showSearch, setShowSearch] = useState(true);
+  const [showSearch, setShowSearch] = useState(false);
 
   // Create a value object that contains all the data we want to share
   // This will be accessible by any component that uses the ShopContext
@@ -19,6 +20,10 @@ const ShopContextProvider = ({ children }) => {
     products, // All product data from our catalog
     currency,
     delivery_fee,
+    search,
+    setSearch,
+    showSearch,
+    setShowSearch,
   };
 
   // Render the Provider component with our value object

@@ -75,7 +75,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Added wishlist functionality
 - Improved responsiveness for filter options
 
-_Last updated: March 30, 2025_
+_Last updated: March 31, 2025_
 
 ## 👨‍💻 Developer
 

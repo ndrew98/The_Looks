@@ -11,12 +11,15 @@ import Orders from "./pages/Orders";
 import Cart from "./pages/Cart";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import SearchBar from "./components/SearchBar";
 
 const App = () => {
   return (
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
       {/* Navbar component to show on all pages */}
       <Navbar />
+      {/* Searchbar component to show on all pages */}
+      <SearchBar />
 
       <Routes>
         <Route index element={<Home />} />
