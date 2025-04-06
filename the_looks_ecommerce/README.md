@@ -33,7 +33,7 @@ npm run build
 
 ## 🗂️ Project Structure
 
-```
+```plaintext
 src/
 ├── assets/      # Images and static assets
 ├── components/  # Reusable UI components
@@ -60,10 +60,6 @@ src/
 - [React Router](https://reactrouter.com/) - Navigation
 - [Vite](https://vitejs.dev/) - Build Tool
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🔄 Latest Updates
 
 - Enhanced navbar functionality and styling
@@ -75,7 +71,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Added wishlist functionality
 - Improved responsiveness for filter options
 
-_Last updated: March 31, 2025_
+### Last updated: March 31, 2025
 
 ## 👨‍💻 Developer
 

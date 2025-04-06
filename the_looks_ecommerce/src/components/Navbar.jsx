@@ -5,6 +5,8 @@ import { assets } from "../assets/assets";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
+  //Destructuring the getCartCount function from the ShopContext
+  const { getCartCount } = useContext(ShopContext);
   // handle search bar visibility
   const { setShowSearch } = useContext(ShopContext);
   return (
@@ -64,8 +66,12 @@ const Navbar = () => {
             alt="cart_icon"
             className="w-5 min-w-5 cursor-pointer"
           />
-          <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 text-white bg-red-500 aspect-square rounded-full text-[8px]">
-            15
+          <p
+            className={`absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 text-white rounded-full text-[8px] ${
+              getCartCount() <= 0 ? "bg-red-400" : "bg-black"
+            }`}
+          >
+            {getCartCount() <= 0 ? "0" : getCartCount()}
           </p>
         </Link>
         <img
@@ -95,31 +101,31 @@ const Navbar = () => {
           </div>
           <NavLink
             onClick={() => setVisible(false)}
-            className="py-2 pl-6  border "
+            className="py-2 pl-6 border border-gray-300"
             to="/"
           >
             Home
           </NavLink>
           <NavLink
             onClick={() => setVisible(false)}
-            className="py-2 pl-6 border"
+            className="py-2 pl-6 border border-gray-300"
+            to="/collection"
+          >
+            Collection
+          </NavLink>
+          <NavLink
+            onClick={() => setVisible(false)}
+            className="py-2 pl-6 border border-gray-300"
             to="/about"
           >
             About
           </NavLink>
           <NavLink
             onClick={() => setVisible(false)}
-            className="py-2 pl-6 border"
+            className="py-2 pl-6 border border-gray-300"
             to="/contact"
           >
             Contact
-          </NavLink>
-          <NavLink
-            onClick={() => setVisible(false)}
-            className="py-2 pl-6 border"
-            to="/collection"
-          >
-            Collection
           </NavLink>
         </div>
       </div>
