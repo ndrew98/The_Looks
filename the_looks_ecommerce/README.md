@@ -71,7 +71,7 @@ src/
 - Added wishlist functionality
 - Improved responsiveness for filter options
 
-### Last updated: March 31, 2025
+### Last updated: April 6, 2025
 
 ## 👨‍💻 Developer
 
